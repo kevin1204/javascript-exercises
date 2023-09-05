@@ -7,15 +7,25 @@ const subtract = function(a, b) {
 };
 
 const sum = function(numbers) {
-	if(numbers.length === 0){
-    return 0;
-  }
+	// if(numbers.length === 0){
+  //   return 0;
+  // }
 
-  let res = 0;
-  for(let i = 0; i<numbers.length; i++) {
-    res = res + numbers[i];
-  }
-  return res;
+  // let res = 0;
+  // for(let i = 0; i<numbers.length; i++) {
+  //   res = res + numbers[i];
+  // }
+  // return res;
+
+  //an easies way of doing this is:
+  // const total = numbers.reduce((product, current) => {
+  //   return product + current;
+  // }, 0);
+  // return total;
+
+  //and even easier and most compact but also understandable
+  return numbers.reduce((total, current) => total + current,0);
+
 };
 
 const multiply = function(numbers) {
